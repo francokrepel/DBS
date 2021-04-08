@@ -150,18 +150,20 @@ nav img /* for the logo */
     {
         top: 60px;
         display: flex;
+        right: 100px;
     }
+
     .nav-links
     {
         position: absolute;
         /*background: #a8c6d7;*/
-        /*background: transparent;*/
+        background: rgba(255, 255, 255, 0.4);
+        /*background: white;*/
         height: 100%;
         width: 200px;
         top: 0;
         right: 0;
-        text-allign: right;
-        float: right;
+        text-allign: left;
         z-index: 2;
     }
     .calender h1
