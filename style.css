@@ -1,16 +1,19 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Baskervville', serif;
-    font-family: 'Bitter', serif;
     font-family: 'Noto Sans', sans-serif;
 
 }
 
+/*this is so u can scroll horizontally*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .header
 {
-    min-height: 190vh; /*used to be 100 then 190*/
+    min-height: 180vh; /*used to be 100 then 190*/
     width: 100%;
     /*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);*/
     background-image: linear-gradient(
@@ -20,12 +23,13 @@
     background-position: center;
     background-size: auto;
     position: relative;
+
 }
 
 nav
 {
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
 }
@@ -60,7 +64,7 @@ nav img /* for the logo */
 .nav-links ul li::after /* making hover effect */
 {
     content: '';
-    width: 0%;
+    width: 0;
     height: 2px;
     background: #575a5d;
     display: block;
@@ -83,12 +87,12 @@ nav img /* for the logo */
     transform: translate(-50%, -50%); /* so it will be in the center of this div*/
     text-align: center;
 
-    /*background-color: white;*/
 }
 
 .text-box h1
 {
-    font-family: 'Baskervville', serif;
+    font-family: 'Nanum Myeongjo', serif;
+    /*font-family: 'Baskervville', serif;*/
     font-size: 40px;
 }
 
@@ -101,6 +105,8 @@ nav img /* for the logo */
 
 .hero-btn
 {
+    margin-top: 2%;
+    margin-bottom: 2%;
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -122,39 +128,25 @@ nav img /* for the logo */
 }
 
 
-.calender
+/*so icons are hidden for larger screen devices:*/
+nav .fa
 {
-    color: black;
-    position: absolute;
-    text-align: center;
-    top: 128%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+    display: none;
+
 }
 
-.calender h1
-{
-    font-family: 'Baskervville', serif;
-    font-size: 40px;
-}
-
-@media(max-width: 700px) /*for any device with width less or equal to 700px*/
-{
-    .text-box h1
-    {
+@media(max-width: 700px) /*for any device with width less or equal to 700px*/ {
+    .text-box h1 {
         font-size: 30px;
     }
 
-    .nav-links ul li
-    {
+    .nav-links ul li {
         top: 60px;
         display: flex;
         right: 100px;
     }
 
-    .nav-links
-    {
+    .nav-links {
         position: absolute;
         /*background: #a8c6d7;*/
         background: rgba(255, 255, 255, 0.4);
@@ -162,12 +154,93 @@ nav img /* for the logo */
         height: 100%;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-allign: left;
         z-index: 2;
+        /*trasnition of opening and closing when there is an action, so its smooth*/
+        transition: 1s;
     }
-    .calender h1
-    {
-        font-size: 30px;
+
+    nav .fa {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
     }
 }
+
+    /*--------------Why DBS---------------*/
+
+    .row
+    {
+        margin-top: 5%;
+        /*so all the div inside this row will be in the collumn*/
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .WhyDBS
+    {
+        width: 80%;
+        /*so it will be center, space from left and right side*/
+        margin: auto;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        padding-top: 100px;
+    }
+
+
+    .whyDBs-col
+    {
+        /*to split between 3*/
+        flex-basis: 31%;
+        border-radius: 10px;
+        /*so theres space when opening from small screen*/
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    /*img for img*/
+    .whyDBs-col img
+    {
+        height: 70%;
+        width: 100%;
+        border-radius: 10px;
+    }
+    /*p for paragraph*/
+    .whyDBs-col p
+    {
+        padding: 0;
+    }
+
+    .whyDBs-col h3
+    {
+        margin-top: 16px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    @media(max-width: 700px)
+    {
+        .row
+        {
+            flex-direction: column;
+        }
+    }
+
+    /*---------------CALENDAR----------------*/
+    .Calendar
+    {
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        font-family: 'Noto Sans', sans-serif;
+        text-align: center;
+    }
+
+    .Calendar iframe
+    {
+        border-radius: 15px;
+    }
