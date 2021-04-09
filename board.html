@@ -13,68 +13,82 @@
 
 </head>
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/DBSboxes.png"></a>
-            <div class = "nav-links" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
-                <ul style="display:inline-block;float:right;"> <!--makes bullet points-->
-                    <li><a href="">HOME</a></li> <!--so we can click on link-->
-                    <li><a href="">MEETINGS</a></li>
-                    <li><a href="">NEWSLETTER</a></li>
-                    <li><a href="">BOARD</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
-        </nav>
-
-        <div class="text-box">
-            <h1> DIVERSITY IN BANKING AND SECURITIES</h1>
-            <p>
-                Diversity in Banking and Securities was established for
-                the purpose of building a community of diverse UF students
-                interested in pursuing internships and careers in Investment
-                Banking, focusing on minority students who might not see the
-                field as an option due to their backgrounds
-            </p>
-            <a href="" class="hero-btn">Click here for more information</a>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/DBSboxes.png"></a>
+        <div class = "nav-links" id="navLinks">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul style="display:inline-block;float:right;"> <!--makes bullet points-->
+                <li><a href="index.html">HOME</a></li> <!--so we can click on link-->
+                <li><a href="">MEETINGS</a></li>
+                <li><a href="">NEWSLETTER</a></li>
+                <li><a href="board.html">BOARD</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
         </div>
-    </section>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+    <hr>
+</section>
 
-    <!-----------WHY DBS------------->
+<!-----------WHY DBS------------->
 
-    <section class="WhyDBS">
-        <h1>OPPORTUNITIES WITH DBS</h1>
-        <p>loren ipsum text</p>
-
-        <div class="row">
-            <div class="whyDBs-col">
-                <img src="images/networking.jpeg">
-                <h3>Unique Networking Opportunities</h3>
-                <p>text about this</p>
-            </div>
-            <div class="whyDBs-col">
-                <img src="images/presentation.jpeg">
-                <h3>Finance Presentations</h3>
-                <p>text about this</p>
-            </div>
-            <div class="whyDBs-col">
-                <img src="images/community.jpeg">
-                <h3>Community</h3>
-                <p>text about this</p>
-            </div>
+<!--inherting everything from WhyDBS but i just change the padding from top-->
+<section class="WhyDBS" style="padding-top: 40px;">
+    <h1>MEET THE CURRENT E-BOARD</h1>
+    <br>
+    <h2>UPPER E-BOARD</h2>
+    <div class="row">
+        <div class="whyDBs-col">
+            <img src="images/networking.jpeg">
+            <h3>SOMETHING HERE</h3>
+            <p>text about this</p>
         </div>
-    </section>
+        <div class="whyDBs-col">
+            <img src="images/presentation.jpeg">
+            <h3>OMETHING HERE</h3>
+            <p>text about this</p>
+        </div>
+        <div class="whyDBs-col">
+            <img src="images/community.jpeg">
+            <h3>OMETHING HERE</h3>
+            <p>text about this</p>
+        </div>
+    </div>
+    <h2>LOWER E-BOARD</h2>
+    <div class="row">
+        <div class="whyDBs-col">
+            <img src="images/networking.jpeg">
+            <h3>SOMETHING HERE</h3>
+            <p>text about this</p>
+        </div>
+        <div class="whyDBs-col">
+            <img src="images/presentation.jpeg">
+            <h3>OMETHING HERE</h3>
+            <p>text about this</p>
+        </div>
+        <div class="whyDBs-col">
+            <img src="images/community.jpeg">
+            <h3>OMETHING HERE</h3>
+            <p>text about this</p>
+        </div>
+    </div>
+</section>
 
-    <section class="Calendar">
-        <h1>EVENT CALENDAR</h1>
-        <a href="" class="hero-btn">Click here to join a current meeting</a>
-        <iframe style="width: 100%; height: 600px; overflow: auto;" src="https://calendar.google.com/calendar/embed?src=en.ar%23holiday%40group.v.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </section>
 
+<!--------------------Footer---------------------->
+<section class="footer">
+    <hr>
+    <h4>CONNECT</h4>
+    <p>FOLLOW OUR SOCIALS TO STAY UPDATED </p>
+    <ul style="display:inline-block;">
+        <li> <a href="https://www.facebook.com/groups/954918444849150"> <i class="fa fa-facebook"></i> </a></li>
+        <li> <a href="https://www.instagram.com/dbs_uf/"> <i class="fa fa-instagram"></i> </a></li>
+        <li> <a href="https://www.linkedin.com/company/dbsflorida/mycompany/"> <i class="fa fa-linkedin"></i> </a></li>
+    </ul>
+</section>
 
-    <!----------JavaScript for Toggle Menu ----------->
+<!----------JavaScript for Toggle Menu ----------->
 <script>
     // the id navLinks declared in html, and the functions called in html aswell when "onclick"
     var navLinks = document.getElementById("navLinks");
