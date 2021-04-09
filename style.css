@@ -168,6 +168,12 @@ nav .fa
         font-size: 22px;
         cursor: pointer;
     }
+
+    /*this is so the line doesnt epxand when in iphone*/
+    .nav-links ul li:hover::after
+    {
+        width: 0;
+    }
 }
 
     /*--------------Why DBS---------------*/
@@ -254,6 +260,7 @@ nav .fa
     .Calendar iframe
     {
         border-radius: 15px;
+        margin-bottom: 20px;
     }
 
     .Calendar h1
@@ -269,3 +276,59 @@ nav .fa
             font-size: 30px;
         }
     }
+
+
+/*--------------------Footer---------------------*/
+
+.footer
+{
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer ul li
+{
+    list-style: none; /* no bullet points */
+    display: inline-block; /* so its horizontal */
+    padding: 5px 8px;
+    position: relative;
+    font-size: 20px;
+}
+
+.footer ul li a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer h4
+{
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/*---------------MAKE ICONS PRESSABLE--------------*/
+/* Style all font awesome icons */
+/*.fa*/
+/*{*/
+/*    padding: 20px;*/
+/*    font-size: 30px;*/
+/*    width: 50px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    color: #000000;*/
+/*}*/
+
+/* Add a hover effect if you want */
+.fa:hover
+{
+    opacity: 0.7;
+    color: dodgerblue;
+    transition: 0.5s;
+}
