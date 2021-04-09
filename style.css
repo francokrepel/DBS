@@ -1,3 +1,9 @@
+/*this is so u can scroll horizontally*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,11 +11,6 @@
 
 }
 
-/*this is so u can scroll horizontally*/
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 .header
 {
@@ -326,17 +327,17 @@ nav .fa
 /*}*/
 
 /* Add a hover effect if you want */
-.fa:hover
-{
-    opacity: 0.7;
-    color: dodgerblue;
-    transition: 0.5s;
-}
+/*.fa:hover*/
+/*{*/
+/*    opacity: 0.7;*/
+/*    color: dodgerblue;*/
+/*    transition: 0.5s;*/
+/*}*/
 
 
 /*-----------------MEET THE E BOARD-------------------------*/
 
-.meetBoard
-{
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
