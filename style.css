@@ -178,6 +178,19 @@ nav .fa
     }
 }
 
+
+
+ /*--------------SUB HEADER-------------------*/
+
+.sub-header
+{
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.75),
+            rgba(255, 255, 255, 0.75)
+    ),url(images/NewYork3.jpeg);
+}
+
+
     /*--------------Why DBS---------------*/
 
     .row
@@ -215,10 +228,34 @@ nav .fa
         margin-bottom: 5%;
         text-align: left;
     }
-    /*img for img*/
+
+    .DBS-links ul li
+    {
+        list-style: none; /* no bullet points */
+        display: inline-block; /* so its horizontal */
+        padding: 5px 8px;
+        position: relative;
+    }
+
+    /*CO-President roles*/
+    .whyDBs-col1
+    {
+        flex-basis: 45%;
+        border-radius: 10px;
+        /*so theres space when opening from small screen*/
+        margin-bottom: 5%;
+        text-align: left;
+    }
+    .whyDBs-col1 img
+    {
+        height: 90%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
     .whyDBs-col img
     {
-        height: 70%;
+        height: 80%;
         width: 100%;
         border-radius: 10px;
     }
@@ -296,7 +333,7 @@ nav .fa
     display: inline-block; /* so its horizontal */
     padding: 5px 8px;
     position: relative;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .footer ul li a
@@ -336,4 +373,58 @@ nav .fa
 /*}*/
 
 
-/*-----------------MEET THE E BOARD-------------------------*/
+/*-----------------NEWSLETTER-------------------------*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    /*padding-left: 20px;*/
+    float: left;
+    width: 100%;
+}
+
+.leftcolumn h1
+{
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+.leftcolumn h2
+{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.fakeimg {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.45),
+            rgba(255, 255, 255, 0.45)
+    ),url(images/NewYork2.jpeg);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn {
+        width: 100%;
+    }
+
+    .leftcolumn h1
+    {
+        font-size: 30px;
+    }
+}
