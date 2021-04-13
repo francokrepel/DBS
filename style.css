@@ -5,6 +5,10 @@ html, body {
     overflow-x: hidden;
 }
 
+div.disabled {
+    overflow-x: hidden; //horizontal
+}
+
 *{
     margin: 0;
     padding: 0;
