@@ -13,6 +13,7 @@ div.disabled {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
+    /*font-family: 'Nanum Myeongjo', serif;*/
 
 }
 
@@ -233,6 +234,14 @@ nav .fa
         text-align: left;
     }
 
+    /*.whyDBs-col iframe*/
+    /*{*/
+    /*    border-radius: 15px;*/
+    /*    margin-left: 20px;*/
+    /*    margin-right: 20px;*/
+    /*    margin-bottom: 20px;*/
+    /*}*/
+
     .DBS-links ul li
     {
         list-style: none; /* no bullet points */
@@ -310,6 +319,7 @@ nav .fa
     {
         font-family: 'Nanum Myeongjo', serif;
         font-size: 40px;
+        padding: 5px 8px;
     }
 
     @media(max-width: 700px)
@@ -421,6 +431,18 @@ nav .fa
     margin-top: 20px;
 }
 
+/*google doc try to get into center of screen*/
+.center {
+display: flex;
+}
+
+.center iframe{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .leftcolumn {
@@ -432,3 +454,5 @@ nav .fa
         font-size: 30px;
     }
 }
+
+
